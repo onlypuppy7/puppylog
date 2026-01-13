@@ -1,5 +1,7 @@
 # puppylog
 
+[On npm @ https://www.npmjs.com/package/puppylog](https://www.npmjs.com/package/puppylog)
+
 Coloured logging, ported to npm. Another useless file taken out of my projects!
 
 Essentially just a chalk wrapper.
