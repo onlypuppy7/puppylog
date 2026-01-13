@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-const log = {
+export const log = {
     green: (...args) => console.log(chalk.green(...args)),
     red: (...args) => console.log(chalk.red(...args)),
     yellow: (...args) => console.log(chalk.yellow(...args)),
@@ -50,4 +50,3 @@ const log = {
 };
 
 export default log;
-export { log };

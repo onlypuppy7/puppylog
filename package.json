@@ -1,6 +1,6 @@
 {
   "name": "puppylog",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Coloured logging, ported to npm. Another useless file taken out of my projects!",
   "type": "module",
   "main": "./src/index.js",
