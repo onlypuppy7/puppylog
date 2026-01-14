@@ -31,6 +31,36 @@ export const log = {
     bgBrown: (...args) => console.log(chalk.bgHex('#A52A2A')(...args)),
     bgBeige: (...args) => console.log(chalk.bgHex('#F5F5DC')(...args)),
 
+    boldGreen: (...args) => console.log(chalk.green.bold(...args)),
+    boldRed: (...args) => console.log(chalk.red.bold(...args)),
+    boldYellow: (...args) => console.log(chalk.yellow.bold(...args)),
+    boldBlue: (...args) => console.log(chalk.blue.bold(...args)),
+    boldCyan: (...args) => console.log(chalk.cyan.bold(...args)),
+    boldMagenta: (...args) => console.log(chalk.magenta.bold(...args)),
+    boldWhite: (...args) => console.log(chalk.white.bold(...args)),
+    boldGray: (...args) => console.log(chalk.gray.bold(...args)),
+    boldBlack: (...args) => console.log(chalk.black.bold(...args)),
+    boldPink: (...args) => console.log(chalk.hex('#FFC0CB').bold(...args)),
+    boldOrange: (...args) => console.log(chalk.hex('#FFA500').bold(...args)),
+    boldPurple: (...args) => console.log(chalk.hex('#800080').bold(...args)),
+    boldBrown: (...args) => console.log(chalk.hex('#A52A2A').bold(...args)),
+    boldBeige: (...args) => console.log(chalk.hex('#F5F5DC').bold(...args)),
+
+    italicGreen: (...args) => console.log(chalk.green.italic(...args)),
+    italicRed: (...args) => console.log(chalk.red.italic(...args)),
+    italicYellow: (...args) => console.log(chalk.yellow.italic(...args)),
+    italicBlue: (...args) => console.log(chalk.blue.italic(...args)),
+    italicCyan: (...args) => console.log(chalk.cyan.italic(...args)),
+    italicMagenta: (...args) => console.log(chalk.magenta.italic(...args)),
+    italicWhite: (...args) => console.log(chalk.white.italic(...args)),
+    italicGray: (...args) => console.log(chalk.gray.italic(...args)),
+    italicBlack: (...args) => console.log(chalk.black.italic(...args)),
+    italicPink: (...args) => console.log(chalk.hex('#FFC0CB').italic(...args)),
+    italicOrange: (...args) => console.log(chalk.hex('#FFA500').italic(...args)),
+    italicPurple: (...args) => console.log(chalk.hex('#800080').italic(...args)),
+    italicBrown: (...args) => console.log(chalk.hex('#A52A2A').italic(...args)),
+    italicBeige: (...args) => console.log(chalk.hex('#F5F5DC').italic(...args)),
+
     bold: (...args) => console.log(chalk.bold(...args)),
     italic: (...args) => console.log(chalk.italic(...args)),
     underline: (...args) => console.log(chalk.underline(...args)),
@@ -45,8 +75,8 @@ export const log = {
     muted: (...args) => console.log(chalk.gray.italic(...args)),
     special: (...args) => console.log(chalk.cyan.underline(...args)),
 
-    custom: (message, color) => console.log(chalk[color](message)),
-    customBg: (message, color) => console.log(chalk.bgKeyword(color)(message))
+    custom: (message, color) => console.log((chalk[color])(message)),
+    customBg: (message, color) => console.log((chalk[`bg${color}`])(message))
 };
 
 export default log;
