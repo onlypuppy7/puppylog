@@ -1,8 +1,9 @@
 {
   "name": "puppylog",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Coloured logging, ported to npm. Another useless file taken out of my projects!",
   "type": "module",
+  "types": "./index.d.ts",
   "main": "./src/index.js",
   "exports": {
     ".": "./src/index.js"

@@ -1,5 +1,9 @@
 import chalk from 'chalk';
 
+/**
+ * Logging helpers built on top of chalk.
+ * All methods print directly to stdout.
+ */
 export const log = {
     green: (...args) => console.log(chalk.green(...args)),
     red: (...args) => console.log(chalk.red(...args)),
